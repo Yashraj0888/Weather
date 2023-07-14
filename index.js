@@ -7,11 +7,18 @@ const error404 = document.querySelector('.not-found');
 search.addEventListener('click', () => {
 
     const APIKey = '0aab446bfffd9f84dce2c091d03cd06b';
-    const city = document.querySelector('.search-box input').value;
+    var city = '';
 
-    if(city=="PRAYAGRAJ"){
-        city="ALLAHABAD";
+    if(document.querySelector('.search-box input').value==='PRAYAGRAJ') {
+        city='ALLAHABAD';
+    
     }
+    else{
+        city=document.querySelector('.search-box input').value;
+
+    }
+
+        console.log(city);
 
     if (city === '')
         return;
