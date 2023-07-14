@@ -9,6 +9,10 @@ search.addEventListener('click', () => {
     const APIKey = '0aab446bfffd9f84dce2c091d03cd06b';
     const city = document.querySelector('.search-box input').value;
 
+    if(city=="PRAYAGRAJ"){
+        city="ALLAHABAD";
+    }
+
     if (city === '')
         return;
 
