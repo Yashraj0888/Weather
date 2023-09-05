@@ -1,8 +1,10 @@
 const container = document.querySelector('.container');
 const search = document.querySelector('.search-box button');
+const enter=document.querySelector('.search-box button');
 const weatherBox = document.querySelector('.weather-box');
 const weatherDetails = document.querySelector('.weather-detail');
 const error404 = document.querySelector('.not-found');
+
 
 search.addEventListener('click', () => {
 
